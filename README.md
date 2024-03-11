@@ -1,5 +1,10 @@
 # Node.js: Authentication with JSON Web Tokens
-This project showcases an MVC application for implementing authentication with JSON Web Tokens (JWT) in Node.js. It includes both public and private routes, with the latter demonstrating a CRUD functionality for movies.
+This project presents an MVC application designed to demonstrate JSON Web Token (JWT) authentication in a Node.js environment. The application features both public and private routes.
+
+## Features
+- **Authentication**;
+- **Public Routes**: Access a list of movies available in the database.
+- **Private Routes**: Authenticated users can perform actions such as editing or deleting movies, offering a comprehensive CRUD (Create, Read, Update, Delete) functionality within the private section of the application.
 
 ## Project Structure
 - :open_file_folder: src

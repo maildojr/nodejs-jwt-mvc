@@ -9,14 +9,14 @@ const routes = express.Router();
 routes.get('/', (req, res) => {
     res.send('Public router');
 })
+routes.get('/movies', MovieController.index);
+routes.get('/movies/:id', MovieController.show);
 
 // Auth routes
 routes.get('/login', AuthController.login);
 
 // Private routes
 routes.use('*', AuthController.tokenValidated);
-routes.get('/movies', MovieController.index);
-routes.get('/movies/:id', MovieController.show);
 routes.post('/movies', MovieController.store);
 routes.put('/movies/:id', MovieController.update);
 routes.delete('/movies/:id', MovieController.destroy);
