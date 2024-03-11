@@ -1,0 +1,39 @@
+GET http://localhost:3000/
+
+###
+GET http://localhost:3000/login
+Authorization: Basic user@me.com:123456
+
+###
+GET http://localhost:3000/movies
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoie1wiaWRcIjoxLFwibmFtZVwiOlwiTUFJTERPIEpVTklPUlwiLFwiZW1haWxcIjpcIm1haWxkb0BtZS5jb21cIixcInBhc3N3b3JkXCI6XCIxMjM0NTZcIn0iLCJpYXQiOjE3MTAxNjQ4ODAsImV4cCI6MTcxMDE2ODQ4MH0.zWuklGZoAlhkXwdL2bZh0Y_mJPtJ2D_olMbCZdNbPX4
+
+###
+GET http://localhost:3000/movies/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoie1wiaWRcIjoxLFwibmFtZVwiOlwiTUFJTERPIEpVTklPUlwiLFwiZW1haWxcIjpcIm1haWxkb0BtZS5jb21cIixcInBhc3N3b3JkXCI6XCIxMjM0NTZcIn0iLCJpYXQiOjE3MTAxNjQ4ODAsImV4cCI6MTcxMDE2ODQ4MH0.zWuklGZoAlhkXwdL2bZh0Y_mJPtJ2D_olMbCZdNbPX4
+
+###
+POST http://localhost:3000/movies
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoie1wiaWRcIjoxLFwibmFtZVwiOlwiTUFJTERPIEpVTklPUlwiLFwiZW1haWxcIjpcIm1haWxkb0BtZS5jb21cIixcInBhc3N3b3JkXCI6XCIxMjM0NTZcIn0iLCJpYXQiOjE3MTAxNjQ4ODAsImV4cCI6MTcxMDE2ODQ4MH0.zWuklGZoAlhkXwdL2bZh0Y_mJPtJ2D_olMbCZdNbPX4
+{
+    "title": "The Lion King",
+    "release_year": "1994",
+    "genre": "Animation",
+    "director": "Roger Allers",
+    "rating": 8.5
+}
+
+###
+PUT http://localhost:3000/movies/7
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoie1wiaWRcIjoxLFwibmFtZVwiOlwiTUFJTERPIEpVTklPUlwiLFwiZW1haWxcIjpcIm1haWxkb0BtZS5jb21cIixcInBhc3N3b3JkXCI6XCIxMjM0NTZcIn0iLCJpYXQiOjE3MTAxNjQ4ODAsImV4cCI6MTcxMDE2ODQ4MH0.zWuklGZoAlhkXwdL2bZh0Y_mJPtJ2D_olMbCZdNbPX4
+{
+    "title": "The Lion King",
+    "release_year": "1994",
+    "genre": "Animation",
+    "director": "Roger Allers",
+    "rating": 8.5
+}
+
+###
+DELETE http://localhost:3000/movies/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoie1wiaWRcIjoxLFwibmFtZVwiOlwiTUFJTERPIEpVTklPUlwiLFwiZW1haWxcIjpcIm1haWxkb0BtZS5jb21cIixcInBhc3N3b3JkXCI6XCIxMjM0NTZcIn0iLCJpYXQiOjE3MTAxNjQ4ODAsImV4cCI6MTcxMDE2ODQ4MH0.zWuklGZoAlhkXwdL2bZh0Y_mJPtJ2D_olMbCZdNbPX4
